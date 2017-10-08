@@ -15,7 +15,7 @@ import java.util.List;
 public class JsonUtils {
 	public static JsonUtils jsonUtils;
 
-	public JsonUtils() {
+	private JsonUtils() {
 
 	}
 
