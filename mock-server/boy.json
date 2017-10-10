@@ -1,0 +1,18 @@
+[
+    {
+        "request" : {
+            "method" : "post",
+	     "headers" : 
+     	     {
+       		 "content-type" : "application/json"
+             },
+            "uri" : "/boy"
+        },
+        "response" : {
+	"json": 
+          {
+            "boy" : "I'm a boy !"
+          }
+        }
+    }
+]

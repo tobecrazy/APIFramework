@@ -1,0 +1,8 @@
+[
+    {
+        "include" : "boy.json"
+    },
+    {
+        "include" : "girl.json"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "request" : {
+	    "method" : "get",
+            "uri" : "/girl"
+        },
+        "response" : {
+ 	 "json": 
+          {
+            "girl" : "I'm a girl !"
+          }        
+	}
+    }
+]
