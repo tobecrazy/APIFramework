@@ -5,7 +5,7 @@
     <classes>
       <class name="main.java.cn.dbyl.tests.RestAssuredTest">
         <methods>
-          <include name="postTest1"/>
+          <include name="getTest1"/>
         </methods>
       </class> <!-- main.java.cn.dbyl.tests.RestAssuredTest -->
     </classes>
