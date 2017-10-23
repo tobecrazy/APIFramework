@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2344" started-at="2017-10-19T14:03:17Z" finished-at="2017-10-19T14:03:19Z">
+  <suite name="Default suite" duration-ms="4691" started-at="2017-10-23T15:52:42Z" finished-at="2017-10-23T15:52:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2344" started-at="2017-10-19T14:03:17Z" finished-at="2017-10-19T14:03:19Z">
+    <test name="Default test" duration-ms="4691" started-at="2017-10-23T15:52:42Z" finished-at="2017-10-23T15:52:46Z">
       <class name="main.java.cn.dbyl.tests.RestAssuredTest">
-        <test-method status="PASS" signature="getTest1()[pri:0, instance:main.java.cn.dbyl.tests.RestAssuredTest@20e2cbe0]" name="getTest1" duration-ms="2182" started-at="2017-10-19T22:03:17Z" finished-at="2017-10-19T22:03:19Z">
+        <test-method status="PASS" signature="getTest1()[pri:0, instance:main.java.cn.dbyl.tests.RestAssuredTest@20e2cbe0]" name="getTest1" duration-ms="4291" started-at="2017-10-23T23:52:42Z" finished-at="2017-10-23T23:52:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTest1 -->
-        <test-method status="PASS" signature="postTest()[pri:0, instance:main.java.cn.dbyl.tests.RestAssuredTest@20e2cbe0]" name="postTest" duration-ms="134" started-at="2017-10-19T22:03:19Z" finished-at="2017-10-19T22:03:19Z">
+        <test-method status="PASS" signature="postTest()[pri:0, instance:main.java.cn.dbyl.tests.RestAssuredTest@20e2cbe0]" name="postTest" duration-ms="295" started-at="2017-10-23T23:52:46Z" finished-at="2017-10-23T23:52:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTest -->
