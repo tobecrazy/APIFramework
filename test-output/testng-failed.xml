@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="main.java.cn.dbyl.tests.RestAssuredTest">
+      <class name="main.java.cn.dbyl.tests.ODataTest">
         <methods>
+          <include name="getTest2"/>
           <include name="getTest1"/>
         </methods>
-      </class> <!-- main.java.cn.dbyl.tests.RestAssuredTest -->
+      </class> <!-- main.java.cn.dbyl.tests.ODataTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
