@@ -6,7 +6,6 @@
       <class name="main.java.cn.dbyl.tests.ODataTest">
         <methods>
           <include name="getTest2"/>
-          <include name="getTest1"/>
         </methods>
       </class> <!-- main.java.cn.dbyl.tests.ODataTest -->
     </classes>

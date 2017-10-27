@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10301" started-at="2017-10-26T16:01:38Z" finished-at="2017-10-26T16:01:48Z">
+  <suite name="Default suite" duration-ms="13574" started-at="2017-10-27T03:37:56Z" finished-at="2017-10-27T03:38:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10301" started-at="2017-10-26T16:01:38Z" finished-at="2017-10-26T16:01:48Z">
+    <test name="Default test" duration-ms="13574" started-at="2017-10-27T03:37:56Z" finished-at="2017-10-27T03:38:09Z">
       <class name="main.java.cn.dbyl.tests.ODataTest">
-        <test-method status="PASS" signature="getTest1()[pri:0, instance:main.java.cn.dbyl.tests.ODataTest@20e2cbe0]" name="getTest1" duration-ms="4967" started-at="2017-10-27T00:01:38Z" finished-at="2017-10-27T00:01:43Z">
+        <test-method status="PASS" signature="getTest1()[pri:0, instance:main.java.cn.dbyl.tests.ODataTest@35ef1869]" name="getTest1" duration-ms="3135" started-at="2017-10-27T11:38:00Z" finished-at="2017-10-27T11:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTest1 -->
-        <test-method status="PASS" signature="getTest2()[pri:0, instance:main.java.cn.dbyl.tests.ODataTest@20e2cbe0]" name="getTest2" duration-ms="5295" started-at="2017-10-27T00:01:43Z" finished-at="2017-10-27T00:01:48Z">
+        <test-method status="PASS" signature="getTest2()[pri:0, instance:main.java.cn.dbyl.tests.ODataTest@35ef1869]" name="getTest2" duration-ms="2845" started-at="2017-10-27T11:38:06Z" finished-at="2017-10-27T11:38:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTest2 -->
