@@ -9,19 +9,20 @@ import io.restassured.response.Response;
 public class ODataTest {
 	String host = "https://sfapiqaautocand.sflab.ondemand.com";
 
-	@Test
+	@Test(enabled = true)
 	public void getTest1() {
 		RestAssured.baseURI = host;
 
-		Response result = RestAssured.given().auth().basic("cgrant@atTFTV1201", "pwd").param("format", "json")
-				.get("/odata/v2/FormHeader");
-		Assert.assertEquals(result.getStatusCode(), 200);
-		System.out.println(result.getBody().asString());
-		System.out.println(result.xmlPath().get("feed.title").toString());
+		Response result = RestAssured.given().auth().basic("cgrant@atTFTV1201", "pwd").contentType("application/json")
+				.param("format", "json").param("formDataId", "1000000L").header("Content-Type", "application/json")
+				.get("odata/v2/signForm");
+		// Assert.assertEquals(result.getStatusCode(), 200);
+		System.out.println("Test1 >>>>>" + result.getBody().asString());
+		System.out.println("Test1 <<<<<<<" + result.xmlPath().get("feed.title").toString());
 
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void getTest2() {
 		RestAssured.baseURI = host;
 
@@ -29,6 +30,19 @@ public class ODataTest {
 				.get("/odata/v2/");
 		Assert.assertEquals(result.getStatusCode(), 200);
 		System.out.println(result.getBody().asString());
+
+	}
+
+	@Test(enabled = true)
+	public void postTest1() {
+		RestAssured.baseURI = host;
+
+		Response result = RestAssured.given().auth().basic("cgrant@atTFTV1201", "pwd")
+				.header("Content-Type", "application/json")
+				.body("{\"formDataIdList\":\"6682\",\"action\":\"forward\",\"COMMENT\":\"TFT monitor\"}")
+				.post("/odata/v2/internal/massRouteForm");
+		// Assert.assertEquals(result.getStatusCode(), 200);
+		System.out.println(">>>>" + result.asString());
 
 	}
 }
