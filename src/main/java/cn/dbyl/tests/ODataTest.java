@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-
+import static org.hamcrest.CoreMatchers.is;
 public class ODataTest {
 	String host = "https://sfapiqaautocand.sflab.ondemand.com";
 
@@ -19,6 +19,7 @@ public class ODataTest {
 		// Assert.assertEquals(result.getStatusCode(), 200);
 		System.out.println("Test1 >>>>>" + result.prettyPeek().asString());
 		result.then().log().all();
+		result.then().body("cc",is("zz"));
 		System.out.println("Test1 <<<<<<<" + result.xmlPath().get("feed.title").toString());
 
 	}
