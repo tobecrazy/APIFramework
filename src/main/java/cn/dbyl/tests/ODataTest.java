@@ -15,9 +15,10 @@ public class ODataTest {
 
 		Response result = RestAssured.given().auth().basic("cgrant@atTFTV1201", "pwd").contentType("application/json")
 				.param("format", "json").param("formDataId", "1000000L").header("Content-Type", "application/json")
-				.get("odata/v2/signForm");
+				.get("/odata/v2/signForm");
 		// Assert.assertEquals(result.getStatusCode(), 200);
-		System.out.println("Test1 >>>>>" + result.getBody().asString());
+		System.out.println("Test1 >>>>>" + result.prettyPeek().asString());
+		result.then().log().all();
 		System.out.println("Test1 <<<<<<<" + result.xmlPath().get("feed.title").toString());
 
 	}
