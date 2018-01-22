@@ -57,9 +57,12 @@ public class HttpUtils {
 
 	}
 
+	/**
+	 * @author young
+	 * @param requestUrl
+	 */
 	public void getResponse(String requestUrl) {
 		Request.Builder builder = new Request.Builder();
-
 		builder.get().url(requestUrl);
 		Request request = builder.build();
 		Response response = null;

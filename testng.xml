@@ -3,9 +3,9 @@
 <!-- parallel="classes" thread-count="5" -->
 <suite name="Suite">
 	<test verbose="2" preserve-order="true" name="TestDebug">
-		<parameter name="driverName" value="chrome" />
+
 		<classes>
-			<class name="main.java.com.dbyl.appiumCore.tests.iOSTest" />
+			<class name="main.java.cn.dbyl.tests.ODataTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
