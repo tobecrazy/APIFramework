@@ -12,36 +12,43 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<restassured.version>3.0.6</restassured.version>
-		<guice.version>4.1.0</guice.version>
-		<commonlang3.version>3.7</commonlang3.version>
+		<restassured.version>3.0.7</restassured.version>
 		<log4j.version>2.10.0</log4j.version>
-		<reportng.version>1.1.4</reportng.version>
-		<okhttp.version>3.9.1</okhttp.version>
+		<okhttp.version>3.10.0</okhttp.version>
 		<guava.version>23.0</guava.version>
 		<gson.version>2.8.2</gson.version>
+		<commons-logging.version>1.2</commons-logging.version>
+		<httpclient.version>4.5.5</httpclient.version>
+		<testng.version>6.14.3</testng.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>compile</scope>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>4.5.3</version>
+			<version>${httpclient.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpcore</artifactId>
-			<version>4.4.6</version>
+			<artifactId>httpclient</artifactId>
+			<version>${httpclient.version}</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
-			<version>1.2</version>
+			<version>${commons-logging.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
@@ -50,12 +57,6 @@
 			<version>${gson.version}</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>${guava.version}</version>
-		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
 		<dependency>
@@ -64,33 +65,12 @@
 			<version>${okhttp.version}</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
-		<dependency>
-			<groupId>com.google.inject</groupId>
-			<artifactId>guice</artifactId>
-			<version>4.1.0</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.5</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity -->
-		<dependency>
-			<groupId>org.apache.velocity</groupId>
-			<artifactId>velocity</artifactId>
-			<version>1.7</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
-		<dependency>
-			<groupId>org.uncommons</groupId>
-			<artifactId>reportng</artifactId>
-			<version>1.1.4</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
